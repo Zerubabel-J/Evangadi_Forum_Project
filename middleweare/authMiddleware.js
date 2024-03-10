@@ -9,6 +9,8 @@ async function authMiddleware(req, res, next) {
       .json({ msg: "Authorization invalid" });
   }
   const token = authHeader.split(" ")[1];
+  // console.log(token);
+  // console.log(authHeader)
 
   try {
     // const { username, userid } = jwt.verify(authHeader, "secret");

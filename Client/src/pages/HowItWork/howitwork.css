@@ -1,0 +1,69 @@
+.evan_net_exp{
+    height: 150px;
+    padding-bottom: 150px;
+    /* position: relative; */
+    padding-top: 150px;
+    background-image: url(../../assets/bg-transparent6.png);
+    background-size: cover;
+    background-color: #fafafa;
+    background-position: 50% 80%;
+}
+.title{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.notse{
+    width: 58%;
+    margin: 40px auto 0;
+}
+.notse h1{
+    color: var(--color-login-txt);
+}
+.notse h3{
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: var(--color-login-txt);
+}
+p{
+    color: var(--color-howitWork-txt);
+}
+svg{
+    margin-right: 5px;
+}
+ul p{
+    margin-left: 25px;
+}
+.units h6{
+    text-align: center;
+}
+.qout svg{
+    border: 1px solid #e1d2a5;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 12px; 
+}
+.qoutation {
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-howitwork-bg);
+    margin: 10px auto;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 30px;
+}
+.qoutation h3{
+    color: #fff;
+}
+.explained hr{
+    height: 4px;
+    position: relative;
+    z-index: -10;
+    color: rgb(159, 155, 155);
+}

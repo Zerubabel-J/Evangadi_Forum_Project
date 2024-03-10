@@ -1,68 +1,62 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+:root{
+    --color-buttn-bg:#516cf0;
+    --color-buttn-hover: #FE8402;
+    --color-nav-link: #3b455a;
+    --color-login-txt: #2d385e; 
+    --color-eye: #454343;
+    --color-about-txt: #fe8303;
+    --color-howitwork-bg: #fe8402;
+    --color-placeholder-txt:#333333;
+    --color-error-bg: #e01e5a;
+    --color-butn-txt: #ffffff;
+    --color-footer-bg: #3B455A;
+    --transition: all 400ms ease;
+    --color-eva-network: #4b456f;
+    --color-howitWork-txt: #62626f;
+    --color-creat-new-acount: #da7000;
 }
-a:hover {
-  color: #535bf2;
+.butn{
+    border: none;
+    border-radius: 6px;
+    background: var(--color-buttn-bg);
+    text-align: center;
+    width: 200px;
+    height: 41px;
+    margin: 10px;
+    color: var(--color-butn-txt);
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.butn_login{
+    border: none;
+    border-radius: 6px;
+    background: var(--color-buttn-bg);
+    text-align: center;
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    color: var(--color-butn-txt);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.butn:hover{
+    background-color: var(--color-buttn-hover);
+    color: var(--color-butn-txt);
+    transition: var(--transition);
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.butn_login:hover{
+    background-color: var(--color-buttn-hover);
+    color: var(--color-butn-txt);
+    transition: var(--transition);
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.h_w_butn{
+color: var(--color-butn-txt) !important;
+background-color: var(--color-howitwork-bg);
+border: none;
+font-size: 15px;
+line-height: 25px;
+border-radius: 6px;
+text-transform: uppercase;
+padding: 8px 25px;
 }

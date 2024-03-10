@@ -1,0 +1,153 @@
+
+
+   /* ************* */
+   .nav__bar {
+width: 100%;
+position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+.navigation{
+    background-color: #ffffff;
+    border-bottom: 4px solid #f2eeee;
+    
+}
+.nav_butn{
+    border: none;
+    border-radius: 6px;
+    background: var(--color-buttn-bg);
+    text-align: center;
+    width: 200px;
+    height: 41px;
+    margin: 10px;
+    color: var(--color-butn-txt);
+}
+.nav_butn:hover{
+    background-color: var(--color-buttn-hover);
+    color: var(--color-butn-txt);
+    transition: var(--transition);
+}
+.evLogo__continer{
+    width: 250px;
+    margin-left: 50px; 
+}
+.outer__continer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+.lists__cont{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__links a{
+    color: var(--color-nav-link);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+}
+.hovechange a:hover{
+    color: var(--color-buttn-hover);
+    transition: var(--transition);
+}
+.hovechange a{
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.avatar__container img{
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown__container {
+    position: relative;
+}
+
+.dropdown__content {
+    position: absolute;
+    top: 100%;
+    /* Position dropdown below the avatar icon */
+    right: 10;
+    /* Align dropdown to the right */
+    display: none;
+    /* Hide dropdown by default */
+    flex-direction: column;
+    background-color: rgb(225, 238, 238);
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    width: 120px;
+    z-index: 10000;
+}
+
+.dropdown__container:hover .dropdown__content {
+    display: flex;
+    /* Show dropdown on hover */
+}
+
+.dropdown__content a:hover{
+    color: var(--color-buttn-hover);
+    background-color: antiquewhite;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.singleList{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.signin__butn a{
+    color: var(--color-butn-txt);
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 25px;
+    padding: 8px 15px 
+}
+
+.mobile__menu svg{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .evLogo__continer img{
+        width: 100px;
+        margin-left: -40px;
+      
+    }
+    .outer__continer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+      .avatar__container img{
+        width: 30px;
+        height: 30px;
+    }
+    .welcome{
+        font-size: 13px;
+    }
+    .nav_butn{
+    width: 100px;
+
+   }
+  } 
+  

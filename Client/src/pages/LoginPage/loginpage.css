@@ -1,0 +1,314 @@
+.main__bg{
+    background-image: url(../../assets/bg-svg-f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 65px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 40rem 50rem;
+    gap: 4rem;
+}
+
+/* left side start here */
+.left_side{
+    background-color: var(--color-butn-txt);
+    width: 550px;
+    height: 500px;
+    margin-top: 6rem;
+    margin-left: 10rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0.1, 0.1, 0.1, 0.1);
+    position: relative;
+}
+
+/* login page start here */
+.login_account{
+    font-size: 25px;
+    line-height: 1.9em;
+    color: var(--color-login-txt);
+    font-weight: 700;
+    margin-top: 30px;
+}
+.creat_account{
+    color: var(--color-creat-new-acount);
+    text-decoration: none;
+}
+.creat_account:hover{
+    text-decoration: underline;
+}
+.email__input, .password__input{
+    width: 90% !important;
+    height: 50px;
+    font-size: 16px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto 15px !important;
+    position: relative;
+}
+.toggle_password svg{
+    position: absolute;
+    margin-left: -3vw;
+    margin-top: 24px;
+    color: #a1a0a0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forgotPwd a{
+    color: var(--color-creat-new-acount);
+    text-decoration: none;
+}
+.forgotPwd a:hover{
+    text-decoration: underline;
+}
+
+.forgotPwd{
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.h_w_butn a{
+    color: var(--color-butn-txt);
+    text-decoration: none;
+}
+/* register page start here */
+.join-net{
+    font-size: 20px;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: #2d385e;
+    font-weight: bold;
+}
+
+.alrdy a{
+    color: var(--color-creat-new-acount);
+    text-decoration: none;
+}
+.alrdy a:hover{
+    text-decoration: underline;
+}
+.email_input, .password_input{
+    width: 90% !important;
+    height: 50px;
+    font-size: 16px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto 15px !important;
+}
+.lastname, .firstname{
+    margin: 10px auto;
+    font-size: 16px;
+    height: 50px;
+    padding: 12px;
+    outline: none;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+.personal-info{
+    display: flex;
+    margin: 10px auto;
+    width: 90%;
+    justify-content: space-between;
+    
+}
+.toggle_password_reg svg{
+    position: absolute;
+    margin-left: 13vw;
+    margin-top: -47px;
+    color: #a1a0a0;
+}
+.f-name{
+    color: #333333;
+    font-size: 16px;
+    height: 50px;
+    padding: 12px;
+    outline: none;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 48%;
+}
+
+.l-name{
+    margin-left: 10px;
+    color: #333333;
+    font-size: 16px;
+    height: 50px;
+    padding: 12px;
+    outline: none;
+    border: 0 none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 48%;
+}
+.term-policy a{
+    text-decoration: underline;
+    color: var(--color-creat-new-acount);
+}
+.already{
+    color: var(--color-creat-new-acount);
+    text-decoration: none;
+}
+.already:hover{
+    text-decoration: underline;
+}
+/* to toggle the pages */
+.display {
+    display: none;
+}
+/* forget paswerd start here */
+.reset_title{
+    margin: 70px 35px 10px;
+    text-align: left;
+    color: var(--color-login-txt);
+    font-weight: bold;
+    font-size: 25px;
+}
+.reset__desc{
+    color: var(--color-login-txt);
+    /* text-wrap: ; */
+    width: 90%;
+    text-align: left;
+    margin-left: 35px;
+    font-size: 15px;
+}
+.links a{
+color: var(--color-creat-new-acount);
+text-decoration: none;
+display: block;
+text-align: left;
+margin-left: 35px;
+padding-bottom: 10px;
+}
+.links a:hover{
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+/* left side end here */
+
+/* right side  start here*/
+.right_side{
+    width: 550px;
+    height: 500px;
+    margin-top: 6rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+.right_in_contener{
+    padding-top: 50px;
+}
+
+
+.about{
+    color: var(--color-about-txt);
+    font-size: 14px;
+}
+.evangadi-network{
+    font-size: 40px;
+    color: var(--color-eva-network);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    
+}
+.text-gradients {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(310deg, #000000, #e33f00);
+}
+.error_display{
+    color: red;
+}
+.error-bg {
+    border: 1px solid var(--color-error-bg);
+    background: #fce9ef;
+}
+.underline {
+    border-bottom: 3px solid var(--color-howitwork-bg);
+  }
+  .underline {
+    position: relative;
+  }
+  
+  .underline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-howitwork-bg);;
+    transition:  5000s ease-in-out;
+  }
+  
+  .underline.animate:before {
+    width: 100%;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+
+
+/* right side end here */
+@media screen and (max-width: 980px){
+    .main__bg{
+        grid-template-columns: 80%;
+        gap: 0;
+        
+    }
+    .left_side{
+        margin-left: 0;
+        width: 350px;
+    }
+    .toggle_password svg{
+        position: absolute;
+        margin-left: -6vw;
+        margin-top: 24px;
+        color: #a1a0a0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .toggle_password_reg svg{
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: -47px;
+        color: #a1a0a0;
+    }
+    .right_side{
+        width: 300px;
+        height: 500px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        text-align: left;
+    }
+}

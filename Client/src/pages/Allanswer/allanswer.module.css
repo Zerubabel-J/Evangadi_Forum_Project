@@ -1,0 +1,35 @@
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 0 13px #9c9999;
+    width: 65%;
+    margin: 0 auto 40px;
+    color: var(--color-login-txt);
+  }
+ .btn a{
+    color: #ffff;
+    text-decoration: none;
+ }
+
+.titles h3{
+    text-align: center;
+    color: var(--color-login-txt);
+}
+
+.titles h4{
+margin: 15px 0 10px 25px;
+text-align: left;
+}
+.but_contener{
+   margin-left: 20rem;
+}
+@media screen and (max-width: 780px) {
+   .but_contener{
+      display: flex;
+      margin-left: 0;
+   }
+}

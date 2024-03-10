@@ -1,0 +1,89 @@
+.icons {
+  margin-top: 25px;
+  background-color: rgb(246, 245, 245);
+  border: 4px solid #a2d1e4 ;
+  width: 15rem;
+  margin-left: 5rem;
+  box-shadow: 0 0 25px #333;
+  border-radius: 10px;
+}
+
+
+.iconsList {
+  list-style: none;
+  padding: 10px;
+}
+
+.iconsList li {
+  margin-bottom: 30px;
+  text-align: center;
+  /* Center the content horizontally */
+}
+
+.iconsList a {
+  display: flex;
+  flex-direction: column; /* Arrange icon and text in a column */
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+}
+.iconsList a svg {
+  font-size: 30px; /* Adjust icon size */
+  font-weight: bolder; /* Set icon weight to bold */
+}
+
+.iconsList a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.iconsList small {
+  margin-left: 10px;
+}
+
+.iconsList span {
+  margin-left: 10px;
+}
+
+.notificationBadge {
+  position: relative;
+  top: -65px;
+  left: -6px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 3px 4px;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* ************** */
+.corse_img{
+width: 50%;
+background-color: rgb(246, 245, 245);
+border: 4px solid #a2d1e4 ;
+width: 15rem;
+margin: 2rem 5rem;
+display: grid;
+border-radius: 10px;
+box-shadow: 0 0 15px #373535;
+}
+.html_imgs img{
+  width: 3rem;
+  margin-top: 1rem;
+}
+.css_img img{
+width: 7rem;
+margin-left: 2rem;
+}
+.js_img img{
+  width: 6rem;
+  margin-left: 7rem;
+}
+.node_img img{
+  width: 5rem;
+  margin-left: 4rem;
+}
+.react_img img{
+  width: 4rem;
+  margin-bottom: 1rem;
+}

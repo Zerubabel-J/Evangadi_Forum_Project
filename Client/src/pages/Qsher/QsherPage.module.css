@@ -1,0 +1,21 @@
+.evan_net_exp{
+    height: 150px;
+    padding-bottom: 150px;
+    /* position: relative; */
+    padding-top: 150px;
+    background-image: url(../../assets/bg-transparent6.png);
+    background-size: cover;
+    background-color: #fafafa;
+    background-position: 50% 80%;
+}
+.title{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.title h1{
+    color: var(--color-login-txt);
+}
