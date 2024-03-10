@@ -1,15 +1,10 @@
 import React, { useRef, useState, useContext } from "react";
 import "./loginpage.css";
 import Layout from "../Layout/Layout";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { motion } from "framer-motion";
 import axios from "../../axiosConfig";
-import { useNavigate } from "react-router-dom";
-// import { use } from "../../../../routes/userRouts";
-
 const LoginPage = () => {
-  // const [{ user }, dispatch] = useContext(DataContext);
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [logInDisplay, setLogInDisplay] = useState("");
@@ -23,7 +18,7 @@ const LoginPage = () => {
     signIn: false,
     signUp: false,
   });
-
+  // user information we get upon form submission
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -146,8 +141,10 @@ const LoginPage = () => {
                 onClick={() => setPasswordClicked(true)}
                 onBlur={() => setPasswordClicked(false)}
                 onChange={(e) => setPassword(e.target.value)}
-                type={showPassword ? 'text' : 'password'}
-                className={`password__input ${passwordClicked ? 'underline' : ''} ${errors && !password ? 'error-bg' : ''}`}
+                type={showPassword ? "text" : "password"}
+                className={`password__input ${
+                  passwordClicked ? "underline" : ""
+                } ${errors && !password ? "error-bg" : ""}`}
                 name="password"
                 placeholder="Password"
               />

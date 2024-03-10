@@ -16,6 +16,7 @@
     "http-status-codes": "^2.3.0",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.1",
+    "react-spinners": "^0.13.8",
     "safe-buffer": "^5.2.1"
   }
 }

@@ -17,21 +17,22 @@ const Navbar = () => {
     // Perform logout actions (clear user data from local storage, etc.)
     localStorage.removeItem("token");
     setUser(null); // Clear user state
-    
   };
-  
+
   return (
     <header className="nav__bar ">
       <nav className="navigation">
         <div className="container">
           <div className="outer__continer">
             <div className="evLogo__continer">
-              <img src={logo} alt="evangadi-logo" />
+              <Link to="/home">
+                <img src={logo} alt="evangadi-logo" />
+              </Link>
             </div>
             <div className="nav__links">
               <ul className="lists__cont">
                 <li className="flex">
-                  {user  && user.username ? (
+                  {user && user.username ? (
                     <>
                       <div
                         className="avatar__container dropdown__container"
@@ -48,10 +49,16 @@ const Navbar = () => {
                             <Link to={"/question"} className="singleList">
                               Ask Question
                             </Link>
-                            <Link to={`/questions/my-questions/${userid}`} className="singleList">
+                            <Link
+                              to={`/questions/my-questions/${userid}`}
+                              className="singleList"
+                            >
                               My Questions
                             </Link>
-                            <Link to={`/answer/my-answer/${userid}`} className="singleList">
+                            <Link
+                              to={`/answer/my-answer/${userid}`}
+                              className="singleList"
+                            >
                               My Answers
                             </Link>
                             <Link
