@@ -8,20 +8,25 @@ const jwt = require("jsonwebtoken");
 
 async function register(req, res) {
   const { username, firstname, lastname, email, password } = req.body;
+
   if (!email || !username || !firstname || !lastname || !password) {
     return res
       .status(StatusCodes.BAD_REQUEST)
-      .json({ msg: "please provide all require informatio!" });
+      .json({ msg: "please provide all require information!" });
   }
   try {
+    // the response of the select query is an array, the values are the objects (rows)
     const [user] = await dbConnection.query(
       "select username, userid from users where username = ? or email = ?",
       [username, email]
     );
+    // const [users] = await dbConnection.query("select * from users ");
+    // console.log(user);
+    // console.log(users);
     if (user.length > 0) {
       return res
         .status(StatusCodes.BAD_REQUEST)
-        .json({ msg: "user alredy register" });
+        .json({ msg: "You are already registered" });
     }
 
     if (password.length < 8) {
@@ -53,7 +58,7 @@ async function login(req, res) {
   if (!email || !password) {
     return res
       .status(StatusCodes.BAD_REQUEST)
-      .json({ msg: "please provide all require informatio!" });
+      .json({ msg: "please provide all required information!" });
   }
   try {
     const [user] = await dbConnection.query(
@@ -80,7 +85,7 @@ async function login(req, res) {
     });
     return res
       .status(StatusCodes.OK)
-      .json({ msg: "user login successful", token });
+      .json({ msg: "user login successful", token, username });
   } catch (error) {
     console.log(error.message);
     return res
