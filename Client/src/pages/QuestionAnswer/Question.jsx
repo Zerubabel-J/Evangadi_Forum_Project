@@ -5,7 +5,7 @@ import axios from "../../axiosConfig";
 import { Link, useNavigate } from "react-router-dom";
 import { BsCheck2Square } from "react-icons/bs";
 import img from "../../assets/stick_figure_sit_in_question_mark_300_nwm (1).jpg";
-import classes from "./questionAnswer.module.css"
+import classes from "./questionAnswer.module.css";
 import QsherPage from "../Qsher/QsherPage";
 const Question = () => {
   const user = useContext(AppState);
@@ -13,17 +13,15 @@ const Question = () => {
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
   const [questionResponse, setQuestionResponse] = useState("");
-  const [error, setError] = useState("")
-  const [asked, setAsked]= useState('')
-
-
+  const [error, setError] = useState("");
+  const [asked, setAsked] = useState("");
 
   function submitQuestion(e) {
     e.preventDefault();
 
     if (!title || !discription) {
-      setError("Question title or Discrtiption can not be empty")
-      return
+      setError("Question title or Discrtiption can not be empty");
+      return;
     }
     const token = localStorage.getItem("token");
     try {
@@ -44,7 +42,7 @@ const Question = () => {
   return (
     <Layout>
       <section className="explained">
-        <QsherPage/>
+        <QsherPage />
         <div className={classes.question_steps}>
           <div className={classes.img_contener}>
             <img src={img} alt="" />
@@ -83,9 +81,6 @@ const Question = () => {
         </div>
         <div className={classes.ask_container}>
           <h1 className={classes.text_gradient}>Ask a Public Question</h1>
-          {/* <select className="tag" name="" id="">
-              <option value="">Select Tag</option>
-            </select> */}
           <form action="" onSubmit={submitQuestion}>
             <div className={classes.title_contener}>
               <input
@@ -104,19 +99,15 @@ const Question = () => {
                 cols="30"
                 placeholder="Question Content"
               ></textarea>
-            <small className={classes.error_display}>{error}</small>
-
+              <small className={classes.error_display}>{error}</small>
             </div>
             <button className="butn" type="submit">
               Post your Question
             </button>
             <Link to={"/home"}>
-            <button className={`${classes.btn} butn`} >
-              Back to Home
-            </button>
+              <button className={`${classes.btn} butn`}>Back to Home</button>
             </Link>
           </form>
-         
         </div>
       </section>
     </Layout>
