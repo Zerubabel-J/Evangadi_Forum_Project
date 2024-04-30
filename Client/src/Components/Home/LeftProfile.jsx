@@ -14,9 +14,9 @@ import nodeImg from "../../assets/node-removebg-preview.png";
 import reactImg from "../../assets/react-removebg-preview.png";
 
 const LeftProfile = () => {
-  const  {user} = useContext(AppState);
+  const { user } = useContext(AppState);
   const userid = user.userid;
-  console.log(user)
+  console.log(user);
 
   return (
     <>
@@ -54,7 +54,7 @@ const LeftProfile = () => {
             </Link>
           </li>
           <li>
-            <Link to="">
+            <Link to="/home">
               <FaTags />
               <br />
               <span>Search by tag</span>

@@ -152,7 +152,7 @@ const LoginPage = () => {
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </span>
               <p className="forgotPwd">
-                <Link
+                {/* <Link
                   id="forgot-pass"
                   className="lnk-toggler da"
                   data-panel=".panel-forgot"
@@ -160,7 +160,7 @@ const LoginPage = () => {
                   onClick={() => passwordReset()}
                 >
                   Forgot password?
-                </Link>
+                </Link> */}
               </p>
               <button className="butn_login" type="submit">
                 Login
@@ -263,7 +263,7 @@ const LoginPage = () => {
               name="emailaddress"
               placeholder="Email address"
             />
-            <button className="butn_login" type="submit">
+            <button className="butn_login " type="submit">
               Reset your password
             </button>
             <div className="links">
