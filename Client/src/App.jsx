@@ -40,14 +40,26 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/howItWork" element={<HowitWork />} />
         <Route path="/question" element={<Question />} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="/questions/all-questions/:questionid" element={<AnswerPage/>} />
-        <Route path="/answer/getanswers/:questionid" element={<Allanswer/>} />
-        <Route path="/questions/my-questions/:userid" element={<UserQuestion/>} />
-        <Route path="/answer/my-answer/:userid" element={<UserAnswerPage/>} />
-        <Route path="/answer/getanswer/:answerid" element={<UserAnswerEdit/>} />
-        <Route path="/questions/edit-question/:id" element={<UserQuestionEdite/>} />
-        <Route path='*' element={<Four04/>}/>
+        <Route path="/home" element={<Home />} />
+        <Route
+          path="/questions/all-questions/:questionid"
+          element={<AnswerPage />}
+        />
+        <Route path="/answer/getanswers/:questionid" element={<Allanswer />} />
+        <Route
+          path="/questions/my-questions/:userid"
+          element={<UserQuestion />}
+        />
+        <Route path="/answer/my-answer/:userid" element={<UserAnswerPage />} />
+        <Route
+          path="/answer/getanswer/:answerid"
+          element={<UserAnswerEdit />}
+        />
+        <Route
+          path="/questions/edit-question/:id"
+          element={<UserQuestionEdite />}
+        />
+        <Route path="*" element={<Four04 />} />
       </Routes>
     </AppState.Provider>
   );

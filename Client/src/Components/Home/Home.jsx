@@ -175,7 +175,7 @@ const Home = () => {
                       <h4>{question.description}</h4>
                     </div>
                     <div className={classes.postActions}>
-                      <div>
+                      {/* <div>
                         <Link
                           to={`/all-questions/${questionid}/like`}
                           className="post-like"
@@ -194,7 +194,7 @@ const Home = () => {
                           <SlDislike />
                           <span className={classes.dislike}> Dislike:</span>
                         </Link>
-                      </div>
+                      </div> */}
                       <div>
                         <Link
                           to={`/questions/all-questions/${question.questionid}`}
