@@ -17,7 +17,12 @@ const LeftProfile = () => {
   const { user } = useContext(AppState);
   const userid = user.userid;
   console.log(user);
-
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Optional smooth scrolling behavior
+    });
+  }
   return (
     <>
       <div className={classes.icons}>
@@ -54,7 +59,7 @@ const LeftProfile = () => {
             </Link>
           </li>
           <li>
-            <Link to="/home">
+            <Link to="#" onClick={scrollToTop}>
               <FaTags />
               <br />
               <span>Search by tag</span>
